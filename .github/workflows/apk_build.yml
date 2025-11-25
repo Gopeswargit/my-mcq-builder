@@ -1,0 +1,13 @@
+name: Check If Workflow Is Visible
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  check-visibility:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Workflow Visibility Test
+        run: echo "If you see this running, the file path is correct!"
